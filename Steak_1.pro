@@ -12,11 +12,13 @@ SOURCES += \
     exceptionstack.cpp \
     main.cpp \
     mainwindow.cpp \
-    steak.cpp
+    personkeeper.cpp
 
 HEADERS += \
     exceptionstack.h \
     mainwindow.h \
+    person.h \
+    personkeeper.h \
     steak.h
 
 FORMS += \
