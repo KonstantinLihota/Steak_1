@@ -11,16 +11,15 @@ CONFIG += c++11
 SOURCES += \
     exceptionstack.cpp \
     main.cpp \
-    mainwindow.cpp \
-    steak.cpp
+    personkeeper.cpp
 
 HEADERS += \
     exceptionstack.h \
-    mainwindow.h \
+    person.h \
+    personkeeper.h \
     steak.h
 
-FORMS += \
-    mainwindow.ui
+FORMS +=
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
