@@ -2,7 +2,10 @@ k l e
 kons lih evge
 pres pop ros
 konstantin lihota evgenievich
+<<<<<<< HEAD
 k l e
 kons lih evge
 pres pop ros
 konstantin lihota evgenievich
+=======
+>>>>>>> develop

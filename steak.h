@@ -8,11 +8,19 @@ template <typename T>
 class stak
 {
 private:
+<<<<<<< HEAD
     T* stackPtr; //уазатель на стек
     int size ; //максимальнодоступный размер стека
     int top;// номер верхушки стека
 public:
     stak(size_t =40);
+=======
+    T* stackPtr;
+    int size ;
+    int top;
+public:
+    stak(int =40);
+>>>>>>> develop
     stak(const stak<T>&);
     ~stak();
     //добавление элемента в стек, входной параметр элемент колторый добовляется,
@@ -20,11 +28,18 @@ public:
     int push(const T&);
     //возвращениеэлемента из стека
     T pop();
+<<<<<<< HEAD
     int getSize() const; //возращаят длиину стекка
     //принципи инкапсуляции не нарушается так как функция не дает доступ к приватным полям напрямую
     T* get_ptr() const;
     int get_top() const; //возвращает длину стека
  //   void print() const;
+=======
+    int getSize() const;
+    T* get_ptr() const;
+    int get_top() const;
+    void print() const;
+>>>>>>> develop
 };
 
 
@@ -37,12 +52,21 @@ int stak<T>::push(const T& value) { //добавление элемента в �
     throw exc::ExceptionStackOverflor("Stack overflor");
     }
     stackPtr[top++] = value;
+<<<<<<< HEAD
     return top;
 }
 
 //используется size_t тк логику имеют только положительные индексы
 template<typename T>
 stak<T>::stak(size_t _size): //конструктор создающий стэк длины _size
+=======
+    //return top;
+}
+
+
+template<typename T>
+stak<T>::stak(int _size): //конструктор создающий стэк длины _size
+>>>>>>> develop
     size(_size)
 {
     stackPtr = new T[size];
