@@ -1,5 +1,6 @@
 
 #include <string.h>
+
 namespace exc {
 
 class Exception
@@ -50,6 +51,14 @@ class ExceptionStackOverflor: public Exception //функция проверки
 class ExceptionStackEmpty: public Exception{//функция проверки пустоты стэка
     public:
     explicit ExceptionStackEmpty(const char* arg) : Exception(arg){}
+
+    };
+
+
+class ExceptionData: public Exception{//функция проверки пустоты стэка
+    public:
+    explicit ExceptionData(const char* arg) : Exception(arg){
+    }
 
     };
 

@@ -23,9 +23,9 @@ private://конструктор, оператор присваивания и �
 public:
       stak<Person> stakPerson;
 
-      void writePerson() ;//функция записи в файл
+      void writePerson(std::string path) ;//функция записи в файл
 
-      stak<Person>  readPersons();//функция чтения из файла
+      stak<Person>  readPersons(std::string path);//функция чтения из файла
 
      static PersonKeeper& Instance(){//функция сохраняющияя объект статичным
          static PersonKeeper s;
