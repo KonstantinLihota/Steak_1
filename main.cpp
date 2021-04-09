@@ -7,7 +7,6 @@
 
 int main()
 {
-<<<<<<< HEAD
 
     const int size = 20;
 
@@ -34,15 +33,6 @@ int main()
        PersonKeeper& instance = PersonKeeper ::Instance(); //используем паатерн синглтон для создания для создания единственно обьекта
        instance.readPersons();//реализуем потоковое чтение объектов класса Person в стек из файла 'input.txt'
        instance.writePerson();//реализуем  запись объектов класса Person в стек из файла 'output.txt'
-=======
-    const int size = 20;
-
-    stak<int> S(size);
-    try {
-       PersonKeeper& instance = PersonKeeper ::Instance();
-       instance.readPersons();
-       instance.writePerson();
->>>>>>> develop
 
 
     }
