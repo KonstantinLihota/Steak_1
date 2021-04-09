@@ -1,5 +1,7 @@
 
 #include <string.h>
+/*Класс Exception  - базовый класс для обрабоотки исключительных ситуаций от которого мы наследуем классы обработки конкретных исключений
+*/
 
 namespace exc {
 
@@ -39,7 +41,7 @@ class Exception
 
 
 
-class ExceptionStackOverflor: public Exception //функция проверки переполнения стэка
+class ExceptionStackOverflor: public Exception //класс обработки исключения переполнения стэка
     {
     public:
     explicit ExceptionStackOverflor(const char* arg): Exception(arg) {}
@@ -48,14 +50,14 @@ class ExceptionStackOverflor: public Exception //функция проверки
     };
 
 
-class ExceptionStackEmpty: public Exception{//функция проверки пустоты стэка
+class ExceptionStackEmpty: public Exception{//класс обработки исключения пустоты стека
     public:
     explicit ExceptionStackEmpty(const char* arg) : Exception(arg){}
 
     };
 
 
-class ExceptionData: public Exception{//функция проверки пустоты стэка
+class ExceptionData: public Exception{//класс обработки исключения не валидных данных
     public:
     explicit ExceptionData(const char* arg) : Exception(arg){
     }

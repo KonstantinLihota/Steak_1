@@ -1,17 +1,17 @@
 #ifndef PERSON_H
 #define PERSON_H
-
-
 #include <string>
+
+//Класс для работы с обьектами ФИО
 class Person
 {
 private:
 //long key;
-std::string patronymic;
-std::string last_name;
-std::string first_name;
+std::string patronymic; //отчество
+std::string last_name; //имя
+std::string first_name; //фамилия
 public:
-Person(){
+Person(){ //конструктор по умолчанию
     last_name = "";
     first_name =  "";
     patronymic = "";

@@ -20,7 +20,7 @@ int main()
         // S.push(1);
 
         //пустота
-        for (int i = 0; i < size; i++) {
+          for (int i = 0; i < size; i++) {
             S.pop();
         }
         // S.pop();
@@ -30,7 +30,7 @@ int main()
         //что он используется в качестве баззы данных и нам нет необходимости
         //что бы он копировался или был в нескольких эккземплярах,
         //так же singlton дает возможность доступа к нему из любой части программы
-       PersonKeeper& instance = PersonKeeper ::Instance(); //используем паатерн синглтон для создания для создания единственно обьекта
+     PersonKeeper& instance = PersonKeeper ::Instance(); //используем паатерн синглтон для создания для создания единственно обьекта
        instance.readPersons("..\\Steak_1\\input_1.txt");//реализуем потоковое чтение объектов класса Person в стек из файла 'input.txt'
        instance.writePerson("..\\Steak_1\\output_1.txt");//реализуем  запись объектов класса Person в стек из файла 'output.txt'
 
