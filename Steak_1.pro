@@ -11,18 +11,10 @@ CONFIG += c++11
 SOURCES += \
     exceptionstack.cpp \
     main.cpp \
-<<<<<<< HEAD
-=======
-    mainwindow.cpp \
->>>>>>> develop
     personkeeper.cpp
 
 HEADERS += \
     exceptionstack.h \
-<<<<<<< HEAD
-=======
-    mainwindow.h \
->>>>>>> develop
     person.h \
     personkeeper.h \
     steak.h
