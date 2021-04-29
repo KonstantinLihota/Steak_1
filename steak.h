@@ -31,7 +31,7 @@ public:
     */
    const T* get_ptr() const;
     int get_top() const; //возвращает длину стека
-   // void print() const;
+   //void print() const;
 };
 
 

@@ -1,12 +1,15 @@
 #include"personkeeper.h"
 #include<iostream>
 #include<fstream>
+#include <stdio.h>
 stak<Person> PersonKeeper :: readPersons(std::string path) {//функция чтения
 
     std::ifstream file;
      file.open(path);
-     if (!file.is_open()){ //Проверяем окрылся ли файл
-          throw exc::ExceptionData("File is not open");
+     if (!file.is_open()){ //Проверяем окрылся ли файл path
+           std::string exp = "File "+path+" is not open";
+
+          throw exc::ExceptionData(exp.c_str());
 
      }
 

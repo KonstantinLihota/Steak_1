@@ -18,12 +18,15 @@ int main()
         }
 
         // S.push(1);
+       // int *ptr = S.get_ptr();
+      //  delete ptr;
 
         //пустота
           for (int i = 0; i < size; i++) {
             S.pop();
         }
         // S.pop();
+
 
         //Мы используем singlton для того что бы у нас создавался единственный обьект
         //стека, это необходимо по причине того
@@ -32,6 +35,7 @@ int main()
         //так же singlton дает возможность доступа к нему из любой части программы
      PersonKeeper& instance = PersonKeeper ::Instance(); //используем паатерн синглтон для создания для создания единственно обьекта
        instance.readPersons("..\\Steak_1\\input_1.txt");//реализуем потоковое чтение объектов класса Person в стек из файла 'input.txt'
+
        instance.writePerson("..\\Steak_1\\output_1.txt");//реализуем  запись объектов класса Person в стек из файла 'output.txt'
 
        instance.readPersons("..\\Steak_1\\input_2.txt"); //проверка на различные разделители
